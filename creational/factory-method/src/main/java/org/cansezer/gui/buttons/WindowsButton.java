@@ -2,8 +2,6 @@ package org.cansezer.gui.buttons;
 
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 
 public class WindowsButton implements Button {
 
@@ -33,7 +31,7 @@ public class WindowsButton implements Button {
     @Override
     public void onClick() {
         button = new JButton("Exit");
-        button.addActionListener(e -> {
+        button.addActionListener(_ -> {
             frame.setVisible(false);
             System.exit(0);
         });
